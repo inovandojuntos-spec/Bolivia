@@ -1,0 +1,957 @@
+<!doctype html>
+<html lang="es-BO">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+<!-- ====== SEO ====== -->
+<title>DSANT | Vestidos Largos y Conjuntos · Bolivia</title>
+<meta name="description" content="DSANT llegó a Bolivia: vestidos largos y conjuntos de fabricación propia. Precio único Bs 150, raspa tu descuento y pide por WhatsApp. Tallas P y M, stock real." />
+<meta name="theme-color" content="#ffffff" />
+<meta name="robots" content="index, follow" />
+
+<!-- ====== OpenGraph ====== -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="DSANT" />
+<meta property="og:locale" content="es_BO" />
+<meta property="og:title" content="DSANT | Vestidos y Conjuntos · Bolivia" />
+<meta property="og:description" content="Vestidos y conjuntos a Bs 150. Raspa tu descuento y pide por WhatsApp." />
+<meta property="og:image" content="images/vestido-ana/vestido-ana-1.jpg" />
+
+<!-- ====== Favicon (círculo DSant) ====== -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='31' fill='white' stroke='%23e8dcc8' stroke-width='2'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-weight='600' font-size='26' fill='%23b98a2f'%3EDS%3C/text%3E%3C/svg%3E" />
+
+<!-- ====== Fonts ====== -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+<style>
+:root{
+  --bg:#ffffff;
+  --ink:#2b2530;
+  --muted:#7d7383;
+  --gold:#b98a2f;
+  --gold-soft:#d9bc7a;
+  --gold-pale:#f6eeda;
+  --rose:#d98fa4;
+  --rose-soft:#f3d9e1;
+  --rose-pale:#fbf3f6;
+  --line:#eee6ec;
+  --ok:#3f9d6c;
+  --danger:#c9534f;
+  --radius:18px;
+  --shadow:0 10px 34px rgba(120,90,110,.12);
+  --font-h:"Cormorant Garamond",serif;
+  --font-b:"Jost",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-b);font-weight:300;line-height:1.6}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--font-h);font-weight:500;line-height:1.15;margin:0}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.eyebrow{display:inline-block;letter-spacing:.28em;text-transform:uppercase;font-size:.72rem;color:var(--gold);font-weight:500}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:none;cursor:pointer;
+  font-family:var(--font-b);font-weight:500;letter-spacing:.06em;text-transform:uppercase;font-size:.82rem;
+  padding:14px 28px;border-radius:999px;transition:.25s;text-decoration:none}
+.btn-gold{background:linear-gradient(135deg,var(--gold) 0%,var(--gold-soft) 100%);color:#fff;box-shadow:0 8px 22px rgba(185,138,47,.35)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(185,138,47,.45)}
+.btn-rose{background:var(--rose);color:#fff;box-shadow:0 8px 22px rgba(217,143,164,.35)}
+.btn-rose:hover{transform:translateY(-2px)}
+.btn-ghost{background:#fff;border:1px solid var(--line);color:var(--ink)}
+.btn[disabled]{opacity:.45;cursor:not-allowed;transform:none!important}
+
+/* ====== NAV ====== */
+.nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none}
+.logo-badge{width:50px;height:50px;border-radius:50%;background:#fff;border:1px solid #ecdfc9;box-shadow:0 3px 10px rgba(185,138,47,.18);display:flex;align-items:center;justify-content:center;font-family:var(--font-h);font-style:italic;font-weight:600;color:var(--gold);font-size:1.05rem;letter-spacing:.01em;flex:none}
+.nav-links{display:flex;gap:26px;align-items:center}
+.nav-links a{text-decoration:none;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.nav-links a:hover{color:var(--gold)}
+.cart-btn{position:relative;background:none;border:1px solid var(--line);border-radius:999px;padding:9px 18px;cursor:pointer;font-family:var(--font-b);font-size:.82rem;letter-spacing:.06em}
+.cart-btn:hover{border-color:var(--rose)}
+.cart-count{position:absolute;top:-7px;right:-7px;background:var(--rose);color:#fff;font-size:.68rem;min-width:19px;height:19px;border-radius:999px;display:flex;align-items:center;justify-content:center;font-weight:600}
+@media(max-width:760px){.nav-links a:not(.keep){display:none}}
+
+/* ====== HERO ====== */
+.hero{position:relative;overflow:hidden;background:
+  radial-gradient(1100px 500px at 85% -10%, var(--rose-pale) 0%, transparent 60%),
+  radial-gradient(900px 480px at -10% 110%, var(--gold-pale) 0%, transparent 55%), #fff}
+.hero-in{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center;padding:72px 0 84px}
+.hero h1{font-size:clamp(2.5rem,5.4vw,4.1rem)}
+.hero h1 em{font-style:italic;color:var(--rose)}
+.hero p{color:var(--muted);max-width:44ch;font-size:1.04rem}
+.hero-price{display:flex;align-items:baseline;gap:12px;margin:18px 0 6px}
+.hero-price .p{font-family:var(--font-h);font-size:2.5rem;color:var(--gold);font-weight:600}
+.hero-price .l{font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:20px}
+.hero-img{position:relative}
+.hero-img .main{border-radius:26px;box-shadow:var(--shadow);aspect-ratio:4/5;object-fit:cover;width:100%}
+.hero-badge{position:absolute;left:-14px;bottom:26px;background:#fff;border:1px solid var(--line);border-radius:16px;
+  padding:12px 18px;box-shadow:var(--shadow);font-size:.85rem}
+.hero-badge b{color:var(--gold);font-weight:600}
+@media(max-width:860px){.hero-in{grid-template-columns:1fr;padding:44px 0 56px}.hero-img{order:-1}.hero-img .main{aspect-ratio:4/3}}
+
+.marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--rose-pale);overflow:hidden;white-space:nowrap}
+.marquee span{display:inline-block;padding:11px 0;letter-spacing:.24em;text-transform:uppercase;font-size:.72rem;color:var(--rose);animation:mq 26s linear infinite}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ====== SECCIONES ====== */
+section{padding:76px 0}
+.sec-head{text-align:center;max-width:640px;margin:0 auto 46px}
+.sec-head h2{font-size:clamp(1.9rem,3.6vw,2.7rem);margin-top:10px}
+.sec-head p{color:var(--muted)}
+
+/* ====== CATÁLOGO ====== */
+#catalogo{background:linear-gradient(180deg,#fff 0%,var(--rose-pale) 140%)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:26px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:0 6px 20px rgba(120,90,110,.07);display:flex;flex-direction:column}
+.card-imgwrap{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--rose-pale)}
+.media-holder{position:absolute;inset:0}
+.media-holder img,.media-holder video{width:100%;height:100%;object-fit:cover;transition:opacity .3s}
+.card-dots i.v{background:rgba(232,207,150,.9);border-radius:3px}
+.card-dots i.v.on{background:var(--gold-soft)}
+.card-nav{position:absolute;inset:0;display:flex;justify-content:space-between;align-items:center;padding:0 8px;opacity:0;transition:.2s;pointer-events:none}
+.card-nav button{pointer-events:auto}
+.card-imgwrap:hover .card-nav{opacity:1}
+@media(hover:none){.card-nav{opacity:1}} /* en celular las flechas siempre visibles */
+.card-nav button{background:rgba(255,255,255,.9);border:none;width:34px;height:34px;border-radius:999px;cursor:pointer;font-size:1rem;color:var(--ink);box-shadow:0 2px 8px rgba(0,0,0,.15)}
+.card-dots{position:absolute;bottom:10px;left:0;right:0;display:flex;gap:5px;justify-content:center}
+.card-dots i{width:6px;height:6px;border-radius:99px;background:rgba(255,255,255,.55)}
+.card-dots i.on{background:#fff;width:16px}
+.card-tag{position:absolute;top:12px;left:12px;background:rgba(255,255,255,.94);border-radius:999px;padding:4px 13px;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:500}
+.card-body{padding:20px 20px 22px;display:flex;flex-direction:column;gap:12px;flex:1}
+.card-body h3{font-size:1.45rem}
+.card-desc{color:var(--muted);font-size:.9rem;margin:0}
+.opt-label{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 14px;font-size:.82rem;cursor:pointer;font-family:var(--font-b);transition:.15s}
+.chip.on{border-color:var(--gold);background:var(--gold-pale);color:var(--gold);font-weight:500}
+.chip.off{opacity:.35;cursor:not-allowed;text-decoration:line-through}
+.stock-note{font-size:.78rem;color:var(--rose);min-height:1.1em}
+.stock-note.ok{color:var(--ok)}
+.card-foot{display:flex;align-items:center;justify-content:space-between;margin-top:auto;gap:10px}
+.price{font-family:var(--font-h);font-size:1.7rem;color:var(--gold);font-weight:600}
+.price small{font-size:.85rem;color:var(--muted);font-family:var(--font-b);font-weight:300}
+.add-btn{flex:1}
+
+/* ====== RASPADITA ====== */
+#raspadita{background:
+  radial-gradient(700px 380px at 15% 0%, var(--gold-pale) 0%, transparent 55%),
+  radial-gradient(700px 380px at 90% 100%, var(--rose-pale) 0%, transparent 55%), #fff}
+.scratch-wrap{display:flex;flex-direction:column;align-items:center;gap:18px}
+.scratch-box{position:relative;width:min(340px,86vw);border-radius:20px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}
+.scratch-under{background:#fff;text-align:center;padding:34px 20px;min-height:150px;display:flex;flex-direction:column;justify-content:center;gap:6px}
+.scratch-under .pct{font-family:var(--font-h);font-size:3rem;color:var(--rose);font-weight:600;line-height:1}
+.scratch-under .code{font-size:1rem;letter-spacing:.14em;color:var(--gold);font-weight:500}
+.scratch-under .hint{font-size:.78rem;color:var(--muted)}
+#scratchCanvas{position:absolute;inset:0;width:100%;height:100%;touch-action:none;cursor:grab}
+.scratch-done #scratchCanvas{display:none}
+.scratch-msg{font-size:.85rem;color:var(--muted);text-align:center;max-width:40ch}
+
+/* ====== AGENDA ====== */
+#agenda{background:linear-gradient(180deg,var(--rose-pale) 0%,#fff 100%)}
+.agenda-box{max-width:560px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);padding:30px 28px}
+.agenda-box .field{margin-bottom:14px}
+.agenda-box label{display:block;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.agenda-box input,.agenda-box select{width:100%;border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-family:var(--font-b);font-size:16px;background:#fff;color:var(--ink)}
+.agenda-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.contact-toggle{display:flex;gap:8px;margin-bottom:8px}
+.agenda-note{font-size:.82rem;color:var(--muted);text-align:center;margin:10px 0 14px}
+.agenda-note b{color:var(--rose)}
+.agenda-msg{font-size:.85rem;min-height:1.2em;text-align:center;color:var(--danger)}
+.agenda-msg.ok{color:var(--ok)}
+.agenda-box .btn{width:100%}
+@media(max-width:600px){.agenda-box{padding:22px 16px}.agenda-row{grid-template-columns:1fr}}
+
+/* ====== PASOS ====== */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
+.step{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px;text-align:center}
+.step .n{font-family:var(--font-h);font-size:2.2rem;color:var(--rose);font-weight:600}
+.step h3{font-size:1.2rem;margin:6px 0 8px}
+.step p{color:var(--muted);font-size:.9rem;margin:0}
+
+/* ====== UBICACIÓN ====== */
+.map-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:24px;align-items:stretch}
+.map-frame{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);min-height:340px}
+.map-frame iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
+.map-info{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px;display:flex;flex-direction:column;gap:14px}
+.map-info h3{font-size:1.5rem}
+.map-line{display:flex;gap:12px;align-items:flex-start;font-size:.93rem;color:var(--muted)}
+.map-line .ic{flex:none;font-size:1.05rem}
+.map-line b{color:var(--ink);font-weight:500}
+.map-info .btn{margin-top:auto}
+@media(max-width:860px){.map-grid{grid-template-columns:1fr}.map-frame{min-height:260px}.map-frame iframe{min-height:260px}}
+
+/* ====== FAQ ====== */
+#faq details{border:1px solid var(--line);border-radius:14px;background:#fff;padding:16px 20px;margin-bottom:12px}
+#faq summary{cursor:pointer;font-weight:400;font-size:1rem;list-style:none;display:flex;justify-content:space-between;align-items:center}
+#faq summary::after{content:"+";color:var(--gold);font-size:1.3rem}
+#faq details[open] summary::after{content:"–"}
+.faq-a{color:var(--muted);font-size:.92rem;padding-top:10px}
+
+/* ====== FOOTER ====== */
+footer{border-top:1px solid var(--line);padding:44px 0 110px;background:var(--rose-pale)}
+.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+.foot small{color:var(--muted)}
+.ig-link{text-decoration:none;color:var(--rose);letter-spacing:.08em;font-size:.9rem}
+
+/* ====== CARRITO (drawer) ====== */
+.drawer-veil{position:fixed;inset:0;background:rgba(43,37,48,.4);z-index:80;opacity:0;pointer-events:none;transition:.25s}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(430px,94vw);background:#fff;z-index:90;transform:translateX(105%);transition:.3s cubic-bezier(.2,.7,.2,1);display:flex;flex-direction:column;box-shadow:-14px 0 40px rgba(0,0,0,.14)}
+body.cart-open .drawer{transform:none}
+body.cart-open .drawer-veil{opacity:1;pointer-events:auto}
+.drawer-head{display:flex;justify-content:space-between;align-items:center;padding:18px 22px;border-bottom:1px solid var(--line)}
+.drawer-head h3{font-size:1.4rem}
+.drawer-close{background:none;border:none;font-size:1.5rem;cursor:pointer;color:var(--muted)}
+.drawer-items{flex:1;overflow:auto;padding:16px 22px;display:flex;flex-direction:column;gap:14px}
+.d-item{display:flex;gap:12px;border:1px solid var(--line);border-radius:14px;padding:10px}
+.d-item img{width:64px;height:80px;object-fit:cover;border-radius:10px}
+.d-item .t{font-weight:400;font-size:.95rem}
+.d-item .v{color:var(--muted);font-size:.8rem}
+.d-item .row{display:flex;align-items:center;gap:10px;margin-top:6px}
+.qty{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:999px;padding:2px 10px}
+.qty button{background:none;border:none;font-size:1rem;cursor:pointer;color:var(--gold);width:18px}
+.d-item .rm{margin-left:auto;background:none;border:none;color:var(--danger);cursor:pointer;font-size:.78rem}
+.drawer-empty{text-align:center;color:var(--muted);margin-top:40px}
+.drawer-foot{border-top:1px solid var(--line);padding:16px 22px 20px;display:flex;flex-direction:column;gap:10px;background:var(--rose-pale)}
+.sumline{display:flex;justify-content:space-between;font-size:.92rem}
+.sumline.total{font-size:1.15rem;font-weight:500}
+.sumline .disc{color:var(--ok)}
+.drawer-foot input{width:100%;border:1px solid var(--line);border-radius:12px;padding:11px 14px;font-family:var(--font-b);font-size:.9rem;background:#fff}
+.form-msg{font-size:.8rem;color:var(--danger);min-height:1em}
+.coupon-pill{display:none;align-items:center;justify-content:space-between;background:var(--gold-pale);border:1px dashed var(--gold-soft);border-radius:12px;padding:8px 14px;font-size:.85rem;color:var(--gold)}
+.coupon-pill.show{display:flex}
+
+/* ====== WHATSAPP FLOAT ====== */
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:70;background:#25d366;width:56px;height:56px;border-radius:999px;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(37,211,102,.4);text-decoration:none;transition:.2s}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+
+/* ====== BOTÓN FLOTANTE: AGENDA TU PRUEBA ====== */
+.agenda-float{position:fixed;right:18px;bottom:84px;z-index:70;display:flex;align-items:center;gap:8px;
+  background:linear-gradient(135deg,var(--rose) 0%,#e6a8ba 100%);color:#fff;text-decoration:none;
+  padding:13px 20px;border-radius:999px;font-family:var(--font-b);font-weight:500;font-size:.82rem;
+  letter-spacing:.05em;text-transform:uppercase;box-shadow:0 10px 26px rgba(217,143,164,.45);
+  transition:.2s;animation:floatpulse 2.6s ease-in-out infinite}
+.agenda-float:hover{transform:scale(1.06);animation-play-state:paused}
+@keyframes floatpulse{0%,100%{box-shadow:0 10px 26px rgba(217,143,164,.45)}50%{box-shadow:0 10px 34px rgba(217,143,164,.75)}}
+@media(max-width:600px){.agenda-float{right:14px;bottom:76px;padding:12px 16px;font-size:.74rem}}
+
+.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;padding:12px 22px;border-radius:999px;font-size:.85rem;opacity:0;pointer-events:none;transition:.3s;z-index:100}
+.toast.show{opacity:1;transform:translateX(-50%)}
+.skeleton{text-align:center;color:var(--muted);padding:30px}
+
+/* ====== MÓVIL ====== */
+@media(max-width:600px){
+  section{padding:44px 0}
+  .wrap{padding:0 16px}
+  .sec-head{margin-bottom:28px}
+  .nav-in{height:60px}
+  .logo-badge{width:44px;height:44px;font-size:.92rem}
+  .cart-btn{padding:8px 14px;font-size:.78rem}
+  .hero-in{gap:22px;padding:28px 0 40px}
+  .hero p{font-size:.97rem}
+  .hero-price .p{font-size:2.1rem}
+  .hero-cta{gap:10px}
+  .hero-cta .btn{flex:1;padding:13px 10px;font-size:.78rem}
+  .hero-badge{left:10px;bottom:12px;padding:10px 14px;font-size:.8rem}
+  .marquee span{font-size:.64rem;padding:9px 0}
+  .grid{grid-template-columns:1fr;gap:18px}
+  .card-body{padding:16px 15px 18px;gap:10px}
+  .card-body h3{font-size:1.32rem}
+  .price{font-size:1.5rem}
+  .chip{padding:8px 15px}          /* área táctil más cómoda */
+  .card-nav button{width:40px;height:40px}
+  .steps{grid-template-columns:1fr 1fr;gap:12px}
+  .step{padding:18px 13px}
+  .step p{font-size:.82rem}
+  .scratch-box{width:min(320px,92vw)}
+  #faq details{padding:13px 15px}
+  .drawer{width:100vw}
+  .drawer-items{padding:12px 15px}
+  .drawer-foot{padding:12px 15px 16px}
+  .drawer-foot input{padding:12px 14px;font-size:16px}  /* evita zoom de iOS */
+  footer{padding:34px 0 100px}
+  .foot{flex-direction:column;text-align:center;gap:12px}
+  .wa-float{width:52px;height:52px;right:14px;bottom:14px}
+  .toast{width:max-content;max-width:92vw;bottom:80px}
+}
+</style>
+</head>
+<body>
+
+<!-- ====== NAV ====== -->
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="logo" href="#top" aria-label="DSant">
+      <span class="logo-badge">DSant</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#catalogo">Catálogo</a>
+      <a href="#raspadita">Raspadita</a>
+      <a href="#agenda">Prueba en casa</a>
+      <a href="#como">Cómo comprar</a>
+      <a href="#ubicacion">Ubicación</a>
+      <a href="#faq">Preguntas</a>
+      <button class="cart-btn keep" id="cartBtn" type="button">Mi pedido <span class="cart-count" id="cartCount" hidden>0</span></button>
+    </nav>
+  </div>
+</header>
+
+<!-- ====== HERO ====== -->
+<section class="hero" id="top" style="padding:0">
+  <div class="wrap hero-in">
+    <div>
+      <span class="eyebrow">DSant llegó a Bolivia · Santa Cruz de la Sierra</span>
+      <h1>¿Buscando el vestido largo de <em>tus sueños</em>?</h1>
+      <p>Vestidos largos y conjuntos de fabricación propia, con la calidad que ya enamoró a más de 10 mil seguidoras. Tallas P y M, stock real y entrega coordinada por WhatsApp.</p>
+      <div class="hero-price">
+        <span class="p">Bs 150</span>
+        <span class="l">precio único · cualquier modelo</span>
+      </div>
+      <div class="hero-cta">
+        <a class="btn btn-gold" href="#catalogo">Ver catálogo</a>
+        <a class="btn btn-ghost" href="#raspadita">🎁 Raspa tu descuento</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <video class="main" src="images/vestido-bianca/vestido-bianca-v1.mp4" autoplay muted loop playsinline poster="images/vestido-bianca/vestido-bianca-1.jpg" aria-label="Vestido Bianca DSANT"></video>
+      <div class="hero-badge">✨ <b>Raspa y gana</b> hasta 15% de descuento<br/><span style="color:var(--muted);font-size:.78rem">@use.dsant · +10 mil seguidoras</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <span>FABRICACIÓN PROPIA · AHORA EN SANTA CRUZ DE LA SIERRA · PRECIO ÚNICO BS 150 · RASPA TU DESCUENTO · PEDIDOS POR WHATSAPP · &nbsp;&nbsp;FABRICACIÓN PROPIA · AHORA EN SANTA CRUZ DE LA SIERRA · PRECIO ÚNICO BS 150 · RASPA TU DESCUENTO · PEDIDOS POR WHATSAPP ·&nbsp;&nbsp;</span>
+</div>
+
+<!-- ====== CATÁLOGO ====== -->
+<section id="catalogo">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Colección DSANT</span>
+      <h2>Elige tu favorito</h2>
+      <p>Todos a <strong>Bs 150</strong>. Elige color y talla — el stock que ves es el stock real.</p>
+    </div>
+    <div class="grid" id="productGrid">
+      <div class="skeleton">Cargando colección…</div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== RASPADITA ====== -->
+<section id="raspadita">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Regalo para ti</span>
+      <h2>Raspa y gana tu descuento</h2>
+      <p>Raspa la tarjeta dorada con tu dedo y descubre tu premio: 5%, 10% o 15% de descuento en tu pedido.</p>
+    </div>
+    <div class="scratch-wrap">
+      <div class="scratch-box" id="scratchBox">
+        <div class="scratch-under">
+          <div class="pct" id="scratchPct">·</div>
+          <div class="code" id="scratchCode"></div>
+          <div class="hint" id="scratchHint">de descuento en tu pedido</div>
+        </div>
+        <canvas id="scratchCanvas"></canvas>
+      </div>
+      <p class="scratch-msg" id="scratchMsg">Tu código se aplica automáticamente al finalizar tu pedido. Válido por 7 días, un solo uso.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ====== AGENDA TU PRUEBA ====== -->
+<section id="agenda">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Exclusivo Santa Cruz de la Sierra</span>
+      <h2>¡Agenda tu prueba en casa!</h2>
+      <p>Te llevamos el vestido que te gusta para que te lo pruebes con calma. Reserva tu turno de <strong>15 minutos</strong>.</p>
+    </div>
+    <div class="agenda-box">
+      <div class="field">
+        <label>Tu nombre</label>
+        <input id="agName" placeholder="Nombre y apellido" autocomplete="name" />
+      </div>
+      <div class="field">
+        <label>¿Cómo te contactamos?</label>
+        <div class="contact-toggle">
+          <button type="button" class="chip on" id="agTypeWa">WhatsApp</button>
+          <button type="button" class="chip" id="agTypeMail">Correo</button>
+        </div>
+        <input id="agContact" placeholder="Tu número de WhatsApp" inputmode="tel" />
+      </div>
+      <div class="agenda-row">
+        <div class="field">
+          <label>Vestido que te interesa</label>
+          <select id="agProduct"></select>
+        </div>
+        <div class="field">
+          <label>Cantidad a probar</label>
+          <select id="agQty">
+            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+          </select>
+        </div>
+      </div>
+      <div class="agenda-row">
+        <div class="field">
+          <label>Día</label>
+          <input id="agDate" type="date" />
+        </div>
+        <div class="field">
+          <label>Hora</label>
+          <select id="agTime"><option value="">Elige el día primero</option></select>
+        </div>
+      </div>
+      <p class="agenda-note">⏱ Cada turno dura <b>15 minutos</b> · Horario de 9:00 a 19:45</p>
+      <div class="agenda-msg" id="agMsg"></div>
+      <button class="btn btn-rose" id="agBtn" type="button">Reservar mi turno</button>
+    </div>
+  </div>
+</section>
+
+<!-- ====== CÓMO COMPRAR ====== -->
+<section id="como" style="background:var(--gold-pale)">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Así de fácil</span>
+      <h2>Cómo comprar</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><h3>Elige</h3><p>Escoge modelo, color y talla en el catálogo y agrégalo a tu pedido.</p></div>
+      <div class="step"><div class="n">2</div><h3>Raspa</h3><p>Raspa tu tarjeta dorada y gana un descuento de hasta 15%.</p></div>
+      <div class="step"><div class="n">3</div><h3>Confirma</h3><p>Completa tu nombre y ciudad. Tu pedido queda registrado y reservado.</p></div>
+      <div class="step"><div class="n">4</div><h3>Recibe</h3><p>Coordinamos pago y entrega por WhatsApp, en toda Bolivia.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== UBICACIÓN ====== -->
+<section id="ubicacion" style="background:var(--rose-pale)">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Visítanos en Santa Cruz</span>
+      <h2>Dónde estamos</h2>
+      <p>También puedes retirar tu pedido o venir a conocer los vestidos en persona.</p>
+    </div>
+    <div class="map-grid">
+      <div class="map-frame">
+        <iframe
+          src="https://maps.google.com/maps?q=Curupa%C3%BA%20Isuto%2C%204to%20Anillo%20esquina%20Canal%20Isuto%2C%20Santa%20Cruz%20de%20la%20Sierra%2C%20Bolivia&z=16&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa DSant · Condominio Curupaú Isuto"></iframe>
+      </div>
+      <div class="map-info">
+        <h3>DSant · Showroom</h3>
+        <div class="map-line"><span class="ic">📍</span><span><b>Condominio Curupaú Isuto</b><br/>4to Anillo esquina Canal Isuto<br/>Santa Cruz de la Sierra, Bolivia</span></div>
+        <div class="map-line"><span class="ic">🧭</span><span><b>Referencias:</b> zona Equipetrol, sobre el 4to Anillo. Edificio de torres altas en la esquina del Canal Isuto, a pasos de colegios, supermercados y bancos.</span></div>
+        <div class="map-line"><span class="ic">⏰</span><span><b>Atención:</b> de 9:00 a 19:45 · coordina tu visita o tu prueba en casa por WhatsApp.</span></div>
+        <a class="btn btn-gold" target="_blank" rel="noopener"
+           href="https://www.google.com/maps/dir/?api=1&destination=Curupa%C3%BA%20Isuto%2C%204to%20Anillo%20esquina%20Canal%20Isuto%2C%20Santa%20Cruz%20de%20la%20Sierra%2C%20Bolivia">
+          🚗 Cómo llegar (Google Maps)</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== FAQ ====== -->
+<section id="faq">
+  <div class="wrap" style="max-width:760px">
+    <div class="sec-head">
+      <span class="eyebrow">Dudas frecuentes</span>
+      <h2>Preguntas</h2>
+    </div>
+    <details><summary>¿Cuánto cuestan los vestidos y conjuntos?</summary><div class="faq-a">Todos nuestros modelos tienen precio único de Bs 150, cualquier talla y color. Con tu raspadita puedes pagar aún menos.</div></details>
+    <details><summary>¿Cómo pago mi pedido?</summary><div class="faq-a">Al confirmar tu pedido se abre WhatsApp con el resumen. Ahí coordinamos el pago (QR, transferencia o efectivo contra entrega según tu ciudad).</div></details>
+    <details><summary>¿Hacen envíos a mi ciudad?</summary><div class="faq-a">Sí. Estamos en Santa Cruz de la Sierra y enviamos a toda Bolivia. El costo y tiempo de envío se coordina por WhatsApp según tu ubicación.</div></details>
+    <details><summary>¿Quiénes son DSANT?</summary><div class="faq-a">Somos DSant, marca de vestidos largos con fabricación propia y más de 10 mil seguidoras en Instagram (@use.dsant). Vendemos al por menor y también al por mayor — pregúntanos por precios mayoristas.</div></details>
+    <details><summary>¿Qué talla me queda?</summary><div class="faq-a">Trabajamos con tallas P (S) y M. Si tienes dudas, escríbenos por WhatsApp con tus medidas y te asesoramos con gusto.</div></details>
+    <details><summary>¿El descuento de la raspadita es real?</summary><div class="faq-a">¡Sí! Cada código es único, válido por 7 días y de un solo uso. Se descuenta automáticamente del total de tu pedido.</div></details>
+  </div>
+</section>
+
+<!-- ====== FOOTER ====== -->
+<footer>
+  <div class="wrap foot">
+    <a class="logo" href="#top" aria-label="DSant">
+      <span class="logo-badge">DSant</span>
+    </a>
+    <a class="ig-link" href="https://www.instagram.com/use.dsant/" target="_blank" rel="noopener">📷 @use.dsant · +10 mil seguidoras</a>
+    <small>© 2026 DSant · Fabricación propia · Santa Cruz de la Sierra, Bolivia</small>
+  </div>
+</footer>
+
+<!-- ====== CARRITO ====== -->
+<div class="drawer-veil" id="drawerVeil"></div>
+<aside class="drawer" id="drawer" aria-label="Mi pedido">
+  <div class="drawer-head">
+    <h3>Mi pedido</h3>
+    <button class="drawer-close" id="drawerClose" type="button">×</button>
+  </div>
+  <div class="drawer-items" id="drawerItems"></div>
+  <div class="drawer-foot">
+    <div class="coupon-pill" id="couponPill"><span id="couponTxt"></span><span>🎁</span></div>
+    <div class="sumline"><span>Subtotal</span><span id="sumSub">Bs 0</span></div>
+    <div class="sumline"><span class="disc" id="sumDiscLbl" hidden>Descuento</span><span class="disc" id="sumDisc" hidden></span></div>
+    <div class="sumline total"><span>Total</span><span id="sumTotal">Bs 0</span></div>
+    <input id="fName" placeholder="Tu nombre *" autocomplete="name" />
+    <input id="fCity" placeholder="Tu ciudad (La Paz, Santa Cruz…) *" />
+    <input id="fPhone" placeholder="Tu WhatsApp (opcional)" inputmode="tel" />
+    <div class="form-msg" id="formMsg"></div>
+    <button class="btn btn-gold" id="checkoutBtn" type="button">Confirmar por WhatsApp</button>
+  </div>
+</aside>
+
+<!-- ====== AGENDA FLOAT ====== -->
+<a class="agenda-float" href="#agenda" id="agendaFloat">📅 ¡Agenda tu prueba!</a>
+
+<!-- ====== WHATSAPP FLOAT ====== -->
+<a class="wa-float" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4.2 28l6.3-2c1.7.9 3.6 1.4 5.5 1.4 6.6 0 12-5.3 12-11.9S22.6 3 16 3zm0 21.8c-1.7 0-3.4-.5-4.9-1.3l-.4-.2-3.7 1.2 1.2-3.5-.3-.4c-1.3-1.7-2-3.7-2-5.7 0-5.4 4.5-9.9 10.1-9.9s10.1 4.4 10.1 9.9-4.5 9.9-10.1 9.9zm5.6-7.4c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2s-.8 1-1 1.2c-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.7s1.2 3.1 1.3 3.3c.2.2 2.3 3.5 5.5 4.9.8.3 1.4.5 1.9.7.8.2 1.5.2 2 .1.6-.1 1.8-.7 2.1-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.4z"/></svg>
+</a>
+
+<div class="toast" id="toast"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script>
+/* ================== CONFIG ================== */
+const SUPABASE_URL = "https://lrdefhubzhflcrshonhx.supabase.co";
+const SUPABASE_KEY = "sb_publishable_f3uRrlVWc5g6-x2kKiznTg_LKsG3Xys";
+const WHATSAPP = "5562991551720";           // número de pedidos (sin +)
+const IMG_COUNT = { "vestido-bianca":3, "conjunto-bruna":6, "vestido-ana":8, "conjunto-adrielly":4, "vestido-miria":3, "vestido-pamela":8 };
+const VID_COUNT = { "vestido-bianca":1, "conjunto-bruna":2, "vestido-ana":2, "conjunto-adrielly":2, "vestido-miria":1, "vestido-pamela":4 };
+function mediaOf(slug){
+  const m = [];
+  for (let i=1; i<=(VID_COUNT[slug]||0); i++) m.push({ t:"v", src:`images/${slug}/${slug}-v${i}.mp4` }); // videos primero
+  for (let i=1; i<=(IMG_COUNT[slug]||0); i++) m.push({ t:"i", src:`images/${slug}/${slug}-${i}.jpg` });
+  return m.length ? m : [{ t:"i", src:`images/${slug}/${slug}-1.jpg` }];
+}
+
+const db = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+const $ = s => document.querySelector(s);
+const fmt = n => "Bs " + Number(n).toLocaleString("es-BO");
+
+document.getElementById("waFloat").href =
+  `https://wa.me/${WHATSAPP}?text=${encodeURIComponent("¡Hola DSANT! Quiero información sobre los vestidos 💛")}`;
+
+/* ================== ESTADO ================== */
+let PRODUCTS = [];               // [{id,slug,name,type,description,price_bs,variants:[{id,color,size,stock}]}]
+let cart = JSON.parse(localStorage.getItem("dsant_cart") || "[]");   // [{variant_id,qty}]
+let coupon = JSON.parse(localStorage.getItem("dsant_coupon") || "null"); // {code,percent}
+const saveCart = () => localStorage.setItem("dsant_cart", JSON.stringify(cart));
+
+function toast(msg){
+  const t = $("#toast"); t.textContent = msg; t.classList.add("show");
+  clearTimeout(t._h); t._h = setTimeout(()=>t.classList.remove("show"), 2600);
+}
+
+/* ================== CATÁLOGO ================== */
+async function loadCatalog(){
+  const { data, error } = await db.from("products")
+    .select("id,slug,name,type,description,price_bs,variants(id,color,size,stock)")
+    .eq("active", true).order("id");
+  if (error){ $("#productGrid").innerHTML = `<div class="skeleton">No pudimos cargar el catálogo. Recarga la página 🙏</div>`; return; }
+  PRODUCTS = data;
+  renderGrid();
+  renderCart();
+  const sel = $("#agProduct");
+  if (sel && !sel.options.length){
+    PRODUCTS.forEach(p=>{ const o=document.createElement("option"); o.textContent=p.name; sel.appendChild(o); });
+    const oo=document.createElement("option"); oo.textContent="Varios / no sé aún"; sel.appendChild(oo);
+  }
+}
+
+function variantFor(p, color, size){ return p.variants.find(v=>v.color===color && v.size===size); }
+function colorsOf(p){ return [...new Set(p.variants.map(v=>v.color))]; }
+function sizesOf(p, color){ return p.variants.filter(v=>v.color===color).map(v=>v.size); }
+
+function renderGrid(){
+  const grid = $("#productGrid");
+  grid.innerHTML = "";
+  PRODUCTS.forEach(p=>{
+    const colors = colorsOf(p);
+    const state = { color: colors[0], size: null, idx: 0 };
+    const sizes0 = sizesOf(p, state.color);
+    state.size = (sizes0.find(s=>variantFor(p,state.color,s).stock>0)) || sizes0[0];
+    const media = mediaOf(p.slug);
+
+    const card = document.createElement("article");
+    card.className = "card";
+    card.innerHTML = `
+      <div class="card-imgwrap">
+        <div class="media-holder" id="media-${p.id}"></div>
+        <span class="card-tag">${p.type === "conjunto" ? "Conjunto" : "Vestido"}</span>
+        ${media.length>1?`<div class="card-nav">
+          <button type="button" data-nav="-1" aria-label="anterior">‹</button>
+          <button type="button" data-nav="1" aria-label="siguiente">›</button>
+        </div>
+        <div class="card-dots" id="dots-${p.id}"></div>`:""}
+      </div>
+      <div class="card-body">
+        <h3>${p.name}</h3>
+        <p class="card-desc">${p.description||""}</p>
+        <div>
+          <div class="opt-label">Color</div>
+          <div class="chips" id="colors-${p.id}"></div>
+        </div>
+        <div>
+          <div class="opt-label">Talla</div>
+          <div class="chips" id="sizes-${p.id}"></div>
+        </div>
+        <div class="stock-note" id="stock-${p.id}"></div>
+        <div class="card-foot">
+          <div class="price">${fmt(p.price_bs)}</div>
+          <button class="btn btn-rose add-btn" id="add-${p.id}" type="button">Agregar</button>
+        </div>
+      </div>`;
+    grid.appendChild(card);
+
+    // carrusel: arranca en el video (en loop) y solo cambia si la clienta usa las flechas
+    const holder = card.querySelector(`#media-${p.id}`);
+    const dots = card.querySelector(`#dots-${p.id}`);
+    function paintDots(){ if(!dots) return; dots.innerHTML = media.map((m,i)=>`<i class="${m.t==='v'?'v ':''}${i===state.idx?'on':''}"></i>`).join(""); }
+    function showMedia(){
+      const m = media[state.idx];
+      holder.innerHTML = m.t === "v"
+        ? `<video src="${m.src}" autoplay muted loop playsinline preload="metadata" poster="images/${p.slug}/${p.slug}-1.jpg"></video>`
+        : `<img src="${m.src}" alt="${p.name}" loading="lazy" />`;
+      paintDots();
+    }
+    card.querySelectorAll("[data-nav]").forEach(b=>b.addEventListener("click",()=>{
+      state.idx = (state.idx + Number(b.dataset.nav) + media.length) % media.length;
+      showMedia();
+    }));
+    showMedia();
+
+    function paint(){
+      const cWrap = card.querySelector(`#colors-${p.id}`);
+      cWrap.innerHTML = "";
+      colors.forEach(c=>{
+        const has = p.variants.some(v=>v.color===c && v.stock>0);
+        const b = document.createElement("button");
+        b.type="button"; b.className = "chip" + (c===state.color?" on":"") + (has?"":" off");
+        b.textContent = c;
+        if (has) b.onclick = ()=>{ state.color=c;
+          const ss = sizesOf(p,c);
+          state.size = ss.find(s=>variantFor(p,c,s).stock>0) || ss[0];
+          paint(); };
+        cWrap.appendChild(b);
+      });
+      const sWrap = card.querySelector(`#sizes-${p.id}`);
+      sWrap.innerHTML = "";
+      sizesOf(p, state.color).forEach(s=>{
+        const v = variantFor(p, state.color, s);
+        const b = document.createElement("button");
+        b.type="button"; b.className = "chip" + (s===state.size?" on":"") + (v.stock>0?"":" off");
+        b.textContent = s==="U" ? "Única" : s;
+        if (v.stock>0) b.onclick = ()=>{ state.size=s; paint(); };
+        sWrap.appendChild(b);
+      });
+      const v = variantFor(p, state.color, state.size);
+      const note = card.querySelector(`#stock-${p.id}`);
+      const addBtn = card.querySelector(`#add-${p.id}`);
+      if (!v || v.stock<=0){ note.textContent = "Agotado en esta combinación 😢"; note.className="stock-note"; addBtn.disabled = true; }
+      else if (v.stock<=3){ note.textContent = `¡Últimas ${v.stock} unidades!`; note.className="stock-note"; addBtn.disabled = false; }
+      else { note.textContent = `Disponible: ${v.stock} unidades ✓`; note.className="stock-note ok"; addBtn.disabled = false; }
+    }
+    paint();
+
+    card.querySelector(`#add-${p.id}`).addEventListener("click", ()=>{
+      const v = variantFor(p, state.color, state.size);
+      if (!v || v.stock<=0) return;
+      const line = cart.find(i=>i.variant_id===v.id);
+      const inCart = line ? line.qty : 0;
+      if (inCart + 1 > v.stock){ toast("No hay más stock de esta combinación"); return; }
+      if (line) line.qty++; else cart.push({ variant_id: v.id, qty: 1 });
+      saveCart(); renderCart();
+      toast(`${p.name} agregado 💛`);
+      openCart();
+    });
+  });
+}
+
+/* ================== CARRITO ================== */
+function cartInfo(){
+  const rows = [];
+  let subtotal = 0;
+  cart.forEach(i=>{
+    for (const p of PRODUCTS){
+      const v = p.variants.find(x=>x.id===i.variant_id);
+      if (v){ rows.push({ ...i, p, v }); subtotal += p.price_bs * i.qty; break; }
+    }
+  });
+  return { rows, subtotal };
+}
+
+function renderCart(){
+  const { rows, subtotal } = cartInfo();
+  const n = rows.reduce((a,r)=>a+r.qty,0);
+  $("#cartCount").hidden = n===0;
+  $("#cartCount").textContent = n;
+  const box = $("#drawerItems");
+  box.innerHTML = rows.length ? "" : `<div class="drawer-empty">Tu pedido está vacío.<br/>¡Elige tu favorito del catálogo! 🌸</div>`;
+  rows.forEach(r=>{
+    const el = document.createElement("div");
+    el.className = "d-item";
+    el.innerHTML = `
+      <img src="images/${r.p.slug}/${r.p.slug}-1.jpg" alt="" />
+      <div style="flex:1">
+        <div class="t">${r.p.name}</div>
+        <div class="v">${r.v.color} · Talla ${r.v.size==="U"?"Única":r.v.size} · ${fmt(r.p.price_bs)}</div>
+        <div class="row">
+          <span class="qty"><button type="button" data-d="-1">−</button>${r.qty}<button type="button" data-d="1">+</button></span>
+          <button class="rm" type="button">Quitar</button>
+        </div>
+      </div>`;
+    el.querySelectorAll("[data-d]").forEach(b=>b.onclick = ()=>{
+      const d = Number(b.dataset.d);
+      if (d>0 && r.qty+1 > r.v.stock){ toast("No hay más stock disponible"); return; }
+      r.qty += d;
+      if (r.qty<=0) cart = cart.filter(i=>i.variant_id!==r.variant_id);
+      else cart.find(i=>i.variant_id===r.variant_id).qty = r.qty;
+      saveCart(); renderCart();
+    });
+    el.querySelector(".rm").onclick = ()=>{ cart = cart.filter(i=>i.variant_id!==r.variant_id); saveCart(); renderCart(); };
+    box.appendChild(el);
+  });
+
+  const pct = coupon && !coupon.used ? coupon.percent : 0;
+  const disc = subtotal * pct / 100;
+  $("#sumSub").textContent = fmt(subtotal);
+  $("#sumDiscLbl").hidden = $("#sumDisc").hidden = !pct;
+  if (pct){ $("#sumDiscLbl").textContent = `Descuento ${pct}% (${coupon.code})`; $("#sumDisc").textContent = "− " + fmt(disc); }
+  $("#sumTotal").textContent = fmt(subtotal - disc);
+  $("#couponPill").classList.toggle("show", !!pct);
+  if (pct) $("#couponTxt").textContent = `Raspadita aplicada: ${pct}% · ${coupon.code}`;
+  $("#checkoutBtn").disabled = rows.length===0;
+}
+
+function openCart(){ document.body.classList.add("cart-open"); }
+function closeCart(){ document.body.classList.remove("cart-open"); }
+$("#cartBtn").onclick = openCart;
+$("#drawerClose").onclick = closeCart;
+$("#drawerVeil").onclick = closeCart;
+
+/* ================== CHECKOUT ================== */
+$("#checkoutBtn").addEventListener("click", async ()=>{
+  const name = $("#fName").value.trim();
+  const city = $("#fCity").value.trim();
+  const phone = $("#fPhone").value.trim();
+  const msgEl = $("#formMsg");
+  msgEl.textContent = "";
+  if (!name || !city){ msgEl.textContent = "Completa tu nombre y ciudad para continuar."; return; }
+  if (!cart.length) return;
+
+  const btn = $("#checkoutBtn");
+  btn.disabled = true; btn.textContent = "Registrando pedido…";
+  const { data, error } = await db.rpc("place_order", {
+    p_customer_name: name,
+    p_phone: phone || null,
+    p_city: city,
+    p_items: cart.map(i=>({ variant_id: i.variant_id, qty: i.qty })),
+    p_discount_code: coupon ? coupon.code : null
+  });
+  btn.disabled = false; btn.textContent = "Confirmar por WhatsApp";
+
+  if (error){
+    msgEl.textContent = (error.message||"").includes("Sin stock")
+      ? error.message.replace(/^.*Sin stock/, "Sin stock") + ". Actualizamos el catálogo."
+      : "No pudimos registrar el pedido. Intenta de nuevo.";
+    await loadCatalog();
+    return;
+  }
+
+  // pedido OK → mensaje de WhatsApp
+  const lines = data.items.map(it=>`• ${it.name} · ${it.color} · Talla ${it.size==="U"?"Única":it.size} × ${it.qty} — ${fmt(it.price_bs*it.qty)}`);
+  let msg = `¡Hola DSANT! 🌸 Soy *${name}* (${city}). Mi pedido *#${data.order_id}*:\n\n${lines.join("\n")}\n\nSubtotal: ${fmt(data.subtotal_bs)}`;
+  if (data.discount_percent>0) msg += `\nRaspadita ${data.discount_percent}% (${coupon.code}): −${fmt(data.subtotal_bs - data.total_bs)}`;
+  msg += `\n*Total: ${fmt(data.total_bs)}*\n\n¿Coordinamos pago y entrega? 💛`;
+
+  // limpiar estado
+  cart = []; saveCart();
+  if (coupon && data.discount_percent>0){ coupon.used = true; localStorage.setItem("dsant_coupon", JSON.stringify(coupon)); }
+  renderCart(); closeCart();
+  toast(`Pedido #${data.order_id} registrado ✓`);
+  await loadCatalog();
+  window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`, "_blank");
+});
+
+/* ================== RASPADITA ================== */
+(function initScratch(){
+  const box = $("#scratchBox"), canvas = $("#scratchCanvas");
+  const pctEl = $("#scratchPct"), codeEl = $("#scratchCode"), msgEl = $("#scratchMsg");
+
+  // ya tiene cupón
+  if (coupon){
+    box.classList.add("scratch-done");
+    pctEl.textContent = coupon.percent + "%";
+    codeEl.textContent = coupon.code;
+    msgEl.textContent = coupon.used ? "Ya usaste tu raspadita en un pedido. ¡Gracias! 💛"
+      : "¡Ya tienes tu descuento! Se aplicará automáticamente en tu pedido.";
+    return;
+  }
+
+  const ctx = canvas.getContext("2d");
+  let ready = false, revealing = false;
+
+  function paintCover(){
+    const r = box.getBoundingClientRect();
+    canvas.width = r.width * devicePixelRatio;
+    canvas.height = r.height * devicePixelRatio;
+    ctx.scale(devicePixelRatio, devicePixelRatio);
+    const g = ctx.createLinearGradient(0,0,r.width,r.height);
+    g.addColorStop(0,"#d9bc7a"); g.addColorStop(.5,"#b98a2f"); g.addColorStop(1,"#e8cf96");
+    ctx.fillStyle = g;
+    ctx.fillRect(0,0,r.width,r.height);
+    ctx.fillStyle = "rgba(255,255,255,.85)";
+    ctx.font = "500 15px Jost, sans-serif";
+    ctx.textAlign = "center";
+    ctx.fillText("✨ RASPA AQUÍ ✨", r.width/2, r.height/2 - 8);
+    ctx.font = "300 12px Jost, sans-serif";
+    ctx.fillText("desliza tu dedo y descubre tu premio", r.width/2, r.height/2 + 14);
+    ready = true;
+  }
+  requestAnimationFrame(paintCover);
+  addEventListener("resize", paintCover);
+
+  let drawing = false;
+  function scratch(ev){
+    if (!ready || !drawing || revealing) return;
+    const r = canvas.getBoundingClientRect();
+    const t = ev.touches ? ev.touches[0] : ev;
+    const x = t.clientX - r.left, y = t.clientY - r.top;
+    ctx.globalCompositeOperation = "destination-out";
+    ctx.beginPath(); ctx.arc(x, y, 22, 0, Math.PI*2); ctx.fill();
+    check();
+  }
+  let lastCheck = 0;
+  function check(){
+    const now = Date.now();
+    if (now - lastCheck < 300) return;
+    lastCheck = now;
+    const d = ctx.getImageData(0,0,canvas.width,canvas.height).data;
+    let clear = 0;
+    for (let i=3; i<d.length; i+=64) if (d[i]===0) clear++;
+    if (clear / (d.length/64) > .45) reveal();
+  }
+  async function reveal(){
+    if (revealing) return;
+    revealing = true;
+    const { data, error } = await db.rpc("scratch_discount");
+    if (error){ msgEl.textContent = "Ups, intenta de nuevo en unos segundos."; revealing = false; return; }
+    coupon = { code: data.code, percent: data.percent, used: false };
+    localStorage.setItem("dsant_coupon", JSON.stringify(coupon));
+    pctEl.textContent = data.percent + "%";
+    codeEl.textContent = data.code;
+    canvas.style.transition = "opacity .6s";
+    canvas.style.opacity = 0;
+    setTimeout(()=>box.classList.add("scratch-done"), 600);
+    msgEl.textContent = "¡Felicidades! 🎉 Tu descuento se aplicará automáticamente en tu pedido.";
+    renderCart();
+    toast(`¡Ganaste ${data.percent}% de descuento! 🎉`);
+  }
+  canvas.addEventListener("pointerdown", e=>{ drawing = true; scratch(e); });
+  addEventListener("pointerup", ()=> drawing = false);
+  canvas.addEventListener("pointermove", scratch);
+  canvas.addEventListener("touchstart", e=>{ drawing = true; scratch(e); }, { passive:true });
+  canvas.addEventListener("touchmove", scratch, { passive:true });
+})();
+
+/* ================== AGENDA TU PRUEBA (turnos de 15 min) ================== */
+(function initAgenda(){
+  const TZ = "-04:00"; // hora de Bolivia
+  const dateEl = $("#agDate"), timeEl = $("#agTime"), msgEl = $("#agMsg");
+  let contactType = "whatsapp";
+
+  // fecha mínima = hoy (hora Bolivia)
+  const today = new Date(Date.now() - 4*3600*1000).toISOString().slice(0,10);
+  dateEl.min = today;
+
+  $("#agTypeWa").onclick = ()=>{ contactType="whatsapp";
+    $("#agTypeWa").classList.add("on"); $("#agTypeMail").classList.remove("on");
+    $("#agContact").placeholder = "Tu número de WhatsApp"; $("#agContact").inputMode = "tel"; };
+  $("#agTypeMail").onclick = ()=>{ contactType="email";
+    $("#agTypeMail").classList.add("on"); $("#agTypeWa").classList.remove("on");
+    $("#agContact").placeholder = "Tu correo electrónico"; $("#agContact").inputMode = "email"; };
+
+  function allSlots(){
+    const out = [];
+    for (let h=9; h<20; h++) for (const m of [0,15,30,45]) out.push(`${String(h).padStart(2,"0")}:${String(m).padStart(2,"0")}`);
+    return out;
+  }
+
+  async function loadSlots(){
+    const day = dateEl.value;
+    timeEl.innerHTML = `<option value="">Cargando horarios…</option>`;
+    if (!day) return;
+    const { data } = await db.rpc("booked_slots", { p_day: day });
+    const taken = new Set((data||[]).map(t=>{
+      const d = new Date(t); // hora Bolivia = UTC-4
+      const bo = new Date(d.getTime() - 4*3600*1000);
+      return bo.toISOString().slice(11,16);
+    }));
+    const now = new Date(Date.now() - 4*3600*1000);
+    const isToday = day === now.toISOString().slice(0,10);
+    const nowHM = now.toISOString().slice(11,16);
+    timeEl.innerHTML = `<option value="">Elige tu hora</option>`;
+    allSlots().forEach(s=>{
+      const o = document.createElement("option");
+      o.value = s;
+      const past = isToday && s <= nowHM;
+      o.disabled = taken.has(s) || past;
+      o.textContent = s + (taken.has(s) ? " · ocupado" : "");
+      timeEl.appendChild(o);
+    });
+  }
+  dateEl.addEventListener("change", loadSlots);
+
+  $("#agBtn").addEventListener("click", async ()=>{
+    msgEl.className = "agenda-msg";
+    const name = $("#agName").value.trim();
+    const contact = $("#agContact").value.trim();
+    const product = $("#agProduct").value;
+    const qty = Number($("#agQty").value);
+    const day = dateEl.value, time = timeEl.value;
+    if (!name || !contact){ msgEl.textContent = "Completa tu nombre y tu contacto."; return; }
+    if (contactType==="email" && !/.+@.+\..+/.test(contact)){ msgEl.textContent = "Ese correo no parece válido."; return; }
+    if (contactType==="whatsapp" && contact.replace(/\D/g,"").length < 7){ msgEl.textContent = "Ese número no parece válido."; return; }
+    if (!day || !time){ msgEl.textContent = "Elige día y hora para tu prueba."; return; }
+
+    const btn = $("#agBtn");
+    btn.disabled = true; btn.textContent = "Reservando…";
+    const { data, error } = await db.rpc("book_appointment", {
+      p_name: name, p_contact: contact, p_contact_type: contactType,
+      p_product_name: product, p_qty: qty,
+      p_starts_at: `${day}T${time}:00${TZ}`
+    });
+    btn.disabled = false; btn.textContent = "Reservar mi turno";
+
+    if (error){
+      msgEl.textContent = (error.message||"").includes("reservado") ? "Ese horario ya fue reservado, elige otro."
+        : (error.message||"").includes("pasó") ? "Ese horario ya pasó, elige otro."
+        : "No pudimos reservar. Intenta de nuevo.";
+      loadSlots();
+      return;
+    }
+    msgEl.className = "agenda-msg ok";
+    msgEl.textContent = `✓ ¡Turno reservado! Cita #${data.appointment_id} el ${day} a las ${time}. Te confirmaremos por ${contactType==="whatsapp"?"WhatsApp":"correo"}.`;
+    toast("¡Tu prueba en casa está agendada! 🎉");
+    loadSlots();
+  });
+})();
+
+// ocultar el botón flotante de agenda cuando esa sección ya está a la vista
+new IntersectionObserver(([e])=>{
+  $("#agendaFloat").style.opacity = e.isIntersecting ? 0 : 1;
+  $("#agendaFloat").style.pointerEvents = e.isIntersecting ? "none" : "auto";
+}).observe(document.getElementById("agenda"));
+
+loadCatalog();
+</script>
+</body>
+</html>
