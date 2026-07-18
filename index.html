@@ -370,8 +370,8 @@ body.cart-open .drawer-veil{opacity:1;pointer-events:auto}
   <div class="wrap">
     <div class="sec-head">
       <span class="eyebrow">Exclusivo Santa Cruz de la Sierra</span>
-      <h2>¡Agenda tu prueba en casa!</h2>
-      <p>Te llevamos el vestido que te gusta para que te lo pruebes con calma. Reserva tu turno de <strong>15 minutos</strong>.</p>
+      <h2>¡Agenda tu cita!</h2>
+      <p>Selecciona el día, la hora y el vestido que deseas probar. Reserva tu turno de <strong>30 minutos</strong> para una prueba exclusiva y personalizada.</p>
     </div>
     <div class="agenda-box">
       <div class="field">
@@ -408,7 +408,7 @@ body.cart-open .drawer-veil{opacity:1;pointer-events:auto}
           <select id="agTime"><option value="">Elige el día primero</option></select>
         </div>
       </div>
-      <p class="agenda-note">⏱ Cada turno dura <b>15 minutos</b> · Horario de 9:00 a 19:45</p>
+      <p class="agenda-note">⏱ Cada turno dura <b>30 minutos</b> · Horario de 9:00 a 19:30</p>
       <div class="agenda-msg" id="agMsg"></div>
       <button class="btn btn-rose" id="agBtn" type="button">Reservar mi turno</button>
     </div>
@@ -524,7 +524,7 @@ const SUPABASE_URL = "https://lrdefhubzhflcrshonhx.supabase.co";
 const SUPABASE_KEY = "sb_publishable_f3uRrlVWc5g6-x2kKiznTg_LKsG3Xys";
 const WHATSAPP = "5562991551720";           // número de pedidos (sin +)
 const IMG_COUNT = { "vestido-bianca":3, "conjunto-bruna":6, "vestido-ana":8, "conjunto-adrielly":4, "vestido-miria":3, "vestido-pamela":8 };
-const VID_COUNT = { "vestido-bianca":1, "conjunto-bruna":2, "vestido-ana":2, "conjunto-adrielly":2, "vestido-miria":2, "vestido-pamela":4 };
+const VID_COUNT = { "vestido-bianca":1, "conjunto-bruna":2, "vestido-ana":2, "conjunto-adrielly":2, "vestido-miria":1, "vestido-pamela":4 };
 function mediaOf(slug){
   const m = [];
   for (let i=1; i<=(VID_COUNT[slug]||0); i++) m.push({ t:"v", src:`images/${slug}/${slug}-v${i}.mp4` }); // videos primero
@@ -862,7 +862,7 @@ $("#checkoutBtn").addEventListener("click", async ()=>{
   canvas.addEventListener("touchmove", scratch, { passive:true });
 })();
 
-/* ================== AGENDA TU PRUEBA (turnos de 15 min) ================== */
+/* ================== AGENDA TU PRUEBA (turnos de 30 min) ================== */
 (function initAgenda(){
   const TZ = "-04:00"; // hora de Bolivia
   const dateEl = $("#agDate"), timeEl = $("#agTime"), msgEl = $("#agMsg");
@@ -881,7 +881,7 @@ $("#checkoutBtn").addEventListener("click", async ()=>{
 
   function allSlots(){
     const out = [];
-    for (let h=9; h<20; h++) for (const m of [0,15,30,45]) out.push(`${String(h).padStart(2,"0")}:${String(m).padStart(2,"0")}`);
+    for (let h=9; h<20; h++) for (const m of [0,30]) out.push(`${String(h).padStart(2,"0")}:${String(m).padStart(2,"0")}`);
     return out;
   }
 
