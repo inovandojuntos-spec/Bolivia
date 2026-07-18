@@ -507,6 +507,11 @@ document.getElementById("waFloat").href =
 let PRODUCTS = [];               // [{id,slug,name,type,description,price_bs,variants:[{id,color,size,stock}]}]
 let cart = JSON.parse(localStorage.getItem("dsant_cart") || "[]");   // [{variant_id,qty}]
 let coupon = null; // raspadita/descuento desactivado
+
+/* ===== TikTok Pixel: eventos ===== */
+function ttTrack(ev,data){ try{ if(window.ttq && ttq.track) ttq.track(ev,data); }catch(e){} }
+async function ttHash(s){ try{ const b=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(String(s))); return [...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,"0")).join(""); }catch(e){ return null; } }
+function ttNormPhone(p){ let d=String(p||"").replace(/\D/g,""); if(!d) return ""; if(d.length===8) d="591"+d; return "+"+d; }
 const saveCart = () => localStorage.setItem("dsant_cart", JSON.stringify(cart));
 
 function toast(msg){
@@ -632,10 +637,13 @@ function renderGrid(){
       const inCart = line ? line.qty : 0;
       if (inCart + 1 > v.stock){ toast("No hay más stock de esta combinación"); return; }
       if (line) line.qty++; else cart.push({ variant_id: v.id, qty: 1 });
+      ttTrack("AddToCart",{ contents:[{ content_id:String(p.id), content_type:"product", content_name:p.name }], value:Number(p.price_bs), currency:"BOB" });
       saveCart(); renderCart();
       toast(`${p.name} agregado 💛`);
       openCart();
     });
+
+    new IntersectionObserver((ents,obs)=>{ ents.forEach(en=>{ if(en.isIntersecting){ ttTrack("ViewContent",{ contents:[{ content_id:String(p.id), content_type:"product", content_name:p.name }], value:Number(p.price_bs), currency:"BOB" }); obs.unobserve(en.target); } }); },{ threshold:0.4 }).observe(card);
   });
 }
 
@@ -696,7 +704,7 @@ function renderCart(){
 
 function openCart(){ document.body.classList.add("cart-open"); }
 function closeCart(){ document.body.classList.remove("cart-open"); }
-$("#cartBtn").onclick = openCart;
+$("#cartBtn").onclick = ()=>{ openCart(); const ci=cartInfo(); if(ci.rows.length){ ttTrack("InitiateCheckout",{ contents: ci.rows.map(r=>({ content_id:String(r.p.id), content_type:"product", content_name:r.p.name })), value:Number(ci.subtotal), currency:"BOB" }); } };
 $("#drawerClose").onclick = closeCart;
 $("#drawerVeil").onclick = closeCart;
 
@@ -740,6 +748,8 @@ $("#checkoutBtn").addEventListener("click", async ()=>{
   renderCart(); closeCart();
   toast(`Pedido #${data.order_id} registrado ✓`);
   await loadCatalog();
+  if(phone){ ttHash(ttNormPhone(phone)).then(h=>{ if(h && window.ttq && ttq.identify) ttq.identify({ phone_number:h }); }); }
+  ttTrack("Contact",{ contents:(data.items||[]).map(it=>({ content_id:String(it.variant_id||it.name||""), content_type:"product", content_name:it.name })), value:Number(data.total_bs), currency:"BOB" });
   window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`, "_blank");
 });
 
