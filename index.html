@@ -6,7 +6,7 @@
 
 <!-- ====== SEO ====== -->
 <title>DSANT | Vestidos Largos y Conjuntos · Bolivia</title>
-<meta name="description" content="DSANT llegó a Bolivia: vestidos largos y conjuntos de fabricación propia. Precio único Bs 150, raspa tu descuento y pide por WhatsApp. Tallas P y M, stock real." />
+<meta name="description" content="DSANT llegó a Bolivia: vestidos largos y conjuntos de fabricación propia. Precio único Bs 150, pide por WhatsApp. Tallas P y M, stock real." />
 <meta name="theme-color" content="#ffffff" />
 <meta name="robots" content="index, follow" />
 
@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="DSANT" />
 <meta property="og:locale" content="es_BO" />
 <meta property="og:title" content="DSANT | Vestidos y Conjuntos · Bolivia" />
-<meta property="og:description" content="Vestidos y conjuntos a Bs 150. Raspa tu descuento y pide por WhatsApp." />
+<meta property="og:description" content="Vestidos y conjuntos a Bs 150. Pide por WhatsApp." />
 <meta property="og:image" content="images/vestido-ana/vestido-ana-1.jpg" />
 
 <!-- ====== Favicon (círculo DSant) ====== -->
@@ -93,7 +93,7 @@ h1,h2,h3{font-family:var(--font-h);font-weight:500;line-height:1.15;margin:0}
 .hero-badge{position:absolute;left:-14px;bottom:26px;background:#fff;border:1px solid var(--line);border-radius:16px;
   padding:12px 18px;box-shadow:var(--shadow);font-size:.85rem}
 .hero-badge b{color:var(--gold);font-weight:600}
-@media(max-width:860px){.hero-in{grid-template-columns:1fr;padding:44px 0 56px}.hero-img{order:-1}.hero-img .main{aspect-ratio:4/3}}
+@media(max-width:860px){.hero-in{grid-template-columns:1fr;padding:44px 0 56px}.hero-img{order:-1}.hero-img .main{aspect-ratio:20/27}}
 
 .marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--rose-pale);overflow:hidden;white-space:nowrap}
 .marquee span{display:inline-block;padding:11px 0;letter-spacing:.24em;text-transform:uppercase;font-size:.72rem;color:var(--rose);animation:mq 26s linear infinite}
@@ -138,19 +138,6 @@ section{padding:76px 0}
 .price small{font-size:.85rem;color:var(--muted);font-family:var(--font-b);font-weight:300}
 .add-btn{flex:1}
 
-/* ====== RASPADITA ====== */
-#raspadita{background:
-  radial-gradient(700px 380px at 15% 0%, var(--gold-pale) 0%, transparent 55%),
-  radial-gradient(700px 380px at 90% 100%, var(--rose-pale) 0%, transparent 55%), #fff}
-.scratch-wrap{display:flex;flex-direction:column;align-items:center;gap:18px}
-.scratch-box{position:relative;width:min(340px,86vw);border-radius:20px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}
-.scratch-under{background:#fff;text-align:center;padding:34px 20px;min-height:150px;display:flex;flex-direction:column;justify-content:center;gap:6px}
-.scratch-under .pct{font-family:var(--font-h);font-size:3rem;color:var(--rose);font-weight:600;line-height:1}
-.scratch-under .code{font-size:1rem;letter-spacing:.14em;color:var(--gold);font-weight:500}
-.scratch-under .hint{font-size:.78rem;color:var(--muted)}
-#scratchCanvas{position:absolute;inset:0;width:100%;height:100%;touch-action:none;cursor:grab}
-.scratch-done #scratchCanvas{display:none}
-.scratch-msg{font-size:.85rem;color:var(--muted);text-align:center;max-width:40ch}
 
 /* ====== AGENDA ====== */
 #agenda{background:linear-gradient(180deg,var(--rose-pale) 0%,#fff 100%)}
@@ -269,7 +256,6 @@ body.cart-open .drawer-veil{opacity:1;pointer-events:auto}
   .steps{grid-template-columns:1fr 1fr;gap:12px}
   .step{padding:18px 13px}
   .step p{font-size:.82rem}
-  .scratch-box{width:min(320px,92vw)}
   #faq details{padding:13px 15px}
   .drawer{width:100vw}
   .drawer-items{padding:12px 15px}
@@ -292,7 +278,6 @@ body.cart-open .drawer-veil{opacity:1;pointer-events:auto}
     </a>
     <nav class="nav-links">
       <a href="#catalogo">Catálogo</a>
-      <a href="#raspadita">Raspadita</a>
       <a href="#agenda">Prueba en casa</a>
       <a href="#como">Cómo comprar</a>
       <a href="#ubicacion">Ubicación</a>
@@ -308,25 +293,24 @@ body.cart-open .drawer-veil{opacity:1;pointer-events:auto}
     <div>
       <span class="eyebrow">DSant llegó a Bolivia · Santa Cruz de la Sierra</span>
       <h1>¿Buscando el vestido largo de <em>tus sueños</em>?</h1>
-      <p>Vestidos largos y conjuntos de fabricación propia, con la calidad que ya enamoró a más de 10 mil seguidoras. Tallas P y M, stock real y entrega coordinada por WhatsApp.</p>
+      <p>Vestidos y conjuntos exclusivos en promoción.<br/>Atención personalizada por WhatsApp.<br/>Agenda tu prueba y encuentra el modelo ideal para ti.</p>
       <div class="hero-price">
         <span class="p">Bs 150</span>
         <span class="l">precio único · cualquier modelo</span>
       </div>
       <div class="hero-cta">
-        <a class="btn btn-gold" href="#catalogo">Ver catálogo</a>
-        <a class="btn btn-ghost" href="#raspadita">🎁 Raspa tu descuento</a>
+        <a class="btn btn-gold" href="#agenda">Agenda tu cita</a>
       </div>
     </div>
     <div class="hero-img">
       <video class="main" src="images/vestido-bianca/vestido-bianca-v1.mp4" autoplay muted loop playsinline poster="images/vestido-bianca/vestido-bianca-1.jpg" aria-label="Vestido Bianca DSANT"></video>
-      <div class="hero-badge">✨ <b>Raspa y gana</b> hasta 15% de descuento<br/><span style="color:var(--muted);font-size:.78rem">@use.dsant · +10 mil seguidoras</span></div>
+      <div class="hero-badge">✨ <b>Modelos exclusivos</b> en promoción<br/><span style="color:var(--muted);font-size:.78rem">@use.dsant · +10 mil seguidoras</span></div>
     </div>
   </div>
 </section>
 
 <div class="marquee" aria-hidden="true">
-  <span>FABRICACIÓN PROPIA · AHORA EN SANTA CRUZ DE LA SIERRA · PRECIO ÚNICO BS 150 · RASPA TU DESCUENTO · PEDIDOS POR WHATSAPP · &nbsp;&nbsp;FABRICACIÓN PROPIA · AHORA EN SANTA CRUZ DE LA SIERRA · PRECIO ÚNICO BS 150 · RASPA TU DESCUENTO · PEDIDOS POR WHATSAPP ·&nbsp;&nbsp;</span>
+  <span>FABRICACIÓN PROPIA · AHORA EN SANTA CRUZ DE LA SIERRA · PRECIO ÚNICO BS 150 · PEDIDOS POR WHATSAPP · &nbsp;&nbsp;FABRICACIÓN PROPIA · AHORA EN SANTA CRUZ DE LA SIERRA · PRECIO ÚNICO BS 150 · PEDIDOS POR WHATSAPP ·&nbsp;&nbsp;</span>
 </div>
 
 <!-- ====== CATÁLOGO ====== -->
@@ -343,27 +327,6 @@ body.cart-open .drawer-veil{opacity:1;pointer-events:auto}
   </div>
 </section>
 
-<!-- ====== RASPADITA ====== -->
-<section id="raspadita">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">Regalo para ti</span>
-      <h2>Raspa y gana tu descuento</h2>
-      <p>Raspa la tarjeta dorada con tu dedo y descubre tu premio: 5%, 10% o 15% de descuento en tu pedido.</p>
-    </div>
-    <div class="scratch-wrap">
-      <div class="scratch-box" id="scratchBox">
-        <div class="scratch-under">
-          <div class="pct" id="scratchPct">·</div>
-          <div class="code" id="scratchCode"></div>
-          <div class="hint" id="scratchHint">de descuento en tu pedido</div>
-        </div>
-        <canvas id="scratchCanvas"></canvas>
-      </div>
-      <p class="scratch-msg" id="scratchMsg">Tu código se aplica automáticamente al finalizar tu pedido. Válido por 7 días, un solo uso.</p>
-    </div>
-  </div>
-</section>
 
 <!-- ====== AGENDA TU PRUEBA ====== -->
 <section id="agenda">
@@ -424,7 +387,7 @@ body.cart-open .drawer-veil{opacity:1;pointer-events:auto}
     </div>
     <div class="steps">
       <div class="step"><div class="n">1</div><h3>Elige</h3><p>Escoge modelo, color y talla en el catálogo y agrégalo a tu pedido.</p></div>
-      <div class="step"><div class="n">2</div><h3>Raspa</h3><p>Raspa tu tarjeta dorada y gana un descuento de hasta 15%.</p></div>
+      <div class="step"><div class="n">2</div><h3>Agenda</h3><p>Agenda tu prueba y encuentra el modelo ideal para ti.</p></div>
       <div class="step"><div class="n">3</div><h3>Confirma</h3><p>Completa tu nombre y ciudad. Tu pedido queda registrado y reservado.</p></div>
       <div class="step"><div class="n">4</div><h3>Recibe</h3><p>Coordinamos pago y entrega por WhatsApp, en toda Bolivia.</p></div>
     </div>
@@ -466,12 +429,11 @@ body.cart-open .drawer-veil{opacity:1;pointer-events:auto}
       <span class="eyebrow">Dudas frecuentes</span>
       <h2>Preguntas</h2>
     </div>
-    <details><summary>¿Cuánto cuestan los vestidos y conjuntos?</summary><div class="faq-a">Todos nuestros modelos tienen precio único de Bs 150, cualquier talla y color. Con tu raspadita puedes pagar aún menos.</div></details>
+    <details><summary>¿Cuánto cuestan los vestidos y conjuntos?</summary><div class="faq-a">Todos nuestros modelos tienen precio único de Bs 150, cualquier talla y color.</div></details>
     <details><summary>¿Cómo pago mi pedido?</summary><div class="faq-a">Al confirmar tu pedido se abre WhatsApp con el resumen. Ahí coordinamos el pago (QR, transferencia o efectivo contra entrega según tu ciudad).</div></details>
     <details><summary>¿Hacen envíos a mi ciudad?</summary><div class="faq-a">Sí. Estamos en Santa Cruz de la Sierra y enviamos a toda Bolivia. El costo y tiempo de envío se coordina por WhatsApp según tu ubicación.</div></details>
     <details><summary>¿Quiénes son DSANT?</summary><div class="faq-a">Somos DSant, marca de vestidos largos con fabricación propia y más de 10 mil seguidoras en Instagram (@use.dsant). Vendemos al por menor y también al por mayor — pregúntanos por precios mayoristas.</div></details>
     <details><summary>¿Qué talla me queda?</summary><div class="faq-a">Trabajamos con tallas P (S) y M. Si tienes dudas, escríbenos por WhatsApp con tus medidas y te asesoramos con gusto.</div></details>
-    <details><summary>¿El descuento de la raspadita es real?</summary><div class="faq-a">¡Sí! Cada código es único, válido por 7 días y de un solo uso. Se descuenta automáticamente del total de tu pedido.</div></details>
   </div>
 </section>
 
@@ -524,7 +486,7 @@ const SUPABASE_URL = "https://lrdefhubzhflcrshonhx.supabase.co";
 const SUPABASE_KEY = "sb_publishable_f3uRrlVWc5g6-x2kKiznTg_LKsG3Xys";
 const WHATSAPP = "59175263900";           // número de pedidos (sin +)
 const IMG_COUNT = { "vestido-bianca":3, "conjunto-bruna":6, "vestido-ana":8, "conjunto-adrielly":4, "vestido-miria":3, "vestido-pamela":8 };
-const VID_COUNT = { "vestido-bianca":1, "conjunto-bruna":2, "vestido-ana":2, "conjunto-adrielly":2, "vestido-miria":1, "vestido-pamela":4, "conjunto-thalia":1 };
+const VID_COUNT = { "vestido-bianca":1, "conjunto-bruna":2, "vestido-ana":2, "conjunto-adrielly":2, "vestido-miria":2, "vestido-pamela":4, "conjunto-thalia":1 };
 function mediaOf(slug){
   const m = [];
   for (let i=1; i<=(VID_COUNT[slug]||0); i++) m.push({ t:"v", src:`images/${slug}/${slug}-v${i}.mp4` }); // videos primero
@@ -542,7 +504,7 @@ document.getElementById("waFloat").href =
 /* ================== ESTADO ================== */
 let PRODUCTS = [];               // [{id,slug,name,type,description,price_bs,variants:[{id,color,size,stock}]}]
 let cart = JSON.parse(localStorage.getItem("dsant_cart") || "[]");   // [{variant_id,qty}]
-let coupon = JSON.parse(localStorage.getItem("dsant_coupon") || "null"); // {code,percent}
+let coupon = null; // raspadita/descuento desactivado
 const saveCart = () => localStorage.setItem("dsant_cart", JSON.stringify(cart));
 
 function toast(msg){
@@ -727,7 +689,6 @@ function renderCart(){
   if (pct){ $("#sumDiscLbl").textContent = `Descuento ${pct}% (${coupon.code})`; $("#sumDisc").textContent = "− " + fmt(disc); }
   $("#sumTotal").textContent = fmt(subtotal - disc);
   $("#couponPill").classList.toggle("show", !!pct);
-  if (pct) $("#couponTxt").textContent = `Raspadita aplicada: ${pct}% · ${coupon.code}`;
   $("#checkoutBtn").disabled = rows.length===0;
 }
 
@@ -769,7 +730,6 @@ $("#checkoutBtn").addEventListener("click", async ()=>{
   // pedido OK → mensaje de WhatsApp
   const lines = data.items.map(it=>`• ${it.name} · ${it.color} · Talla ${it.size==="U"?"Única":it.size} × ${it.qty} — ${fmt(it.price_bs*it.qty)}`);
   let msg = `¡Hola DSANT! 🌸 Soy *${name}* (${city}). Mi pedido *#${data.order_id}*:\n\n${lines.join("\n")}\n\nSubtotal: ${fmt(data.subtotal_bs)}`;
-  if (data.discount_percent>0) msg += `\nRaspadita ${data.discount_percent}% (${coupon.code}): −${fmt(data.subtotal_bs - data.total_bs)}`;
   msg += `\n*Total: ${fmt(data.total_bs)}*\n\n¿Coordinamos pago y entrega? 💛`;
 
   // limpiar estado
@@ -781,86 +741,6 @@ $("#checkoutBtn").addEventListener("click", async ()=>{
   window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`, "_blank");
 });
 
-/* ================== RASPADITA ================== */
-(function initScratch(){
-  const box = $("#scratchBox"), canvas = $("#scratchCanvas");
-  const pctEl = $("#scratchPct"), codeEl = $("#scratchCode"), msgEl = $("#scratchMsg");
-
-  // ya tiene cupón
-  if (coupon){
-    box.classList.add("scratch-done");
-    pctEl.textContent = coupon.percent + "%";
-    codeEl.textContent = coupon.code;
-    msgEl.textContent = coupon.used ? "Ya usaste tu raspadita en un pedido. ¡Gracias! 💛"
-      : "¡Ya tienes tu descuento! Se aplicará automáticamente en tu pedido.";
-    return;
-  }
-
-  const ctx = canvas.getContext("2d");
-  let ready = false, revealing = false;
-
-  function paintCover(){
-    const r = box.getBoundingClientRect();
-    canvas.width = r.width * devicePixelRatio;
-    canvas.height = r.height * devicePixelRatio;
-    ctx.scale(devicePixelRatio, devicePixelRatio);
-    const g = ctx.createLinearGradient(0,0,r.width,r.height);
-    g.addColorStop(0,"#d9bc7a"); g.addColorStop(.5,"#b98a2f"); g.addColorStop(1,"#e8cf96");
-    ctx.fillStyle = g;
-    ctx.fillRect(0,0,r.width,r.height);
-    ctx.fillStyle = "rgba(255,255,255,.85)";
-    ctx.font = "500 15px Jost, sans-serif";
-    ctx.textAlign = "center";
-    ctx.fillText("✨ RASPA AQUÍ ✨", r.width/2, r.height/2 - 8);
-    ctx.font = "300 12px Jost, sans-serif";
-    ctx.fillText("desliza tu dedo y descubre tu premio", r.width/2, r.height/2 + 14);
-    ready = true;
-  }
-  requestAnimationFrame(paintCover);
-  addEventListener("resize", paintCover);
-
-  let drawing = false;
-  function scratch(ev){
-    if (!ready || !drawing || revealing) return;
-    const r = canvas.getBoundingClientRect();
-    const t = ev.touches ? ev.touches[0] : ev;
-    const x = t.clientX - r.left, y = t.clientY - r.top;
-    ctx.globalCompositeOperation = "destination-out";
-    ctx.beginPath(); ctx.arc(x, y, 22, 0, Math.PI*2); ctx.fill();
-    check();
-  }
-  let lastCheck = 0;
-  function check(){
-    const now = Date.now();
-    if (now - lastCheck < 300) return;
-    lastCheck = now;
-    const d = ctx.getImageData(0,0,canvas.width,canvas.height).data;
-    let clear = 0;
-    for (let i=3; i<d.length; i+=64) if (d[i]===0) clear++;
-    if (clear / (d.length/64) > .45) reveal();
-  }
-  async function reveal(){
-    if (revealing) return;
-    revealing = true;
-    const { data, error } = await db.rpc("scratch_discount");
-    if (error){ msgEl.textContent = "Ups, intenta de nuevo en unos segundos."; revealing = false; return; }
-    coupon = { code: data.code, percent: data.percent, used: false };
-    localStorage.setItem("dsant_coupon", JSON.stringify(coupon));
-    pctEl.textContent = data.percent + "%";
-    codeEl.textContent = data.code;
-    canvas.style.transition = "opacity .6s";
-    canvas.style.opacity = 0;
-    setTimeout(()=>box.classList.add("scratch-done"), 600);
-    msgEl.textContent = "¡Felicidades! 🎉 Tu descuento se aplicará automáticamente en tu pedido.";
-    renderCart();
-    toast(`¡Ganaste ${data.percent}% de descuento! 🎉`);
-  }
-  canvas.addEventListener("pointerdown", e=>{ drawing = true; scratch(e); });
-  addEventListener("pointerup", ()=> drawing = false);
-  canvas.addEventListener("pointermove", scratch);
-  canvas.addEventListener("touchstart", e=>{ drawing = true; scratch(e); }, { passive:true });
-  canvas.addEventListener("touchmove", scratch, { passive:true });
-})();
 
 /* ================== AGENDA TU PRUEBA (turnos de 30 min) ================== */
 (function initAgenda(){
@@ -952,6 +832,4 @@ new IntersectionObserver(([e])=>{
 }).observe(document.getElementById("agenda"));
 
 loadCatalog();
-</script>
-</body>
-</html>
+</scr
