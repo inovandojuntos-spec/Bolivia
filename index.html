@@ -750,6 +750,9 @@ $("#checkoutBtn").addEventListener("click", async ()=>{
   await loadCatalog();
   if(phone){ ttHash(ttNormPhone(phone)).then(h=>{ if(h && window.ttq && ttq.identify) ttq.identify({ phone_number:h }); }); }
   ttTrack("Contact",{ contents:(data.items||[]).map(it=>({ content_id:String(it.variant_id||it.name||""), content_type:"product", content_name:it.name })), value:Number(data.total_bs), currency:"BOB" });
+  // Purchase: el pedido queda registrado en Supabase (pago se coordina por WhatsApp).
+  // Cierra el funnel requerido por TikTok: ViewContent → AddToCart → InitiateCheckout → Purchase.
+  ttTrack("Purchase",{ contents:(data.items||[]).map(it=>({ content_id:String(it.variant_id||it.name||""), content_type:"product", content_name:it.name, quantity:Number(it.qty)||1, price:Number(it.price_bs)||0 })), value:Number(data.total_bs), currency:"BOB" });
   window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`, "_blank");
 });
 
